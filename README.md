@@ -1,4 +1,4 @@
-# MISU Python (Conda) Environment
+# MISU Computer-Lab Environments
 
 + Ezra Eisbrenner (December 2023)
 
@@ -30,14 +30,19 @@ activate the environment with
 
 ### FORTRAN
 
+1. install Homebrew and run the brew commands below in the terminal
+   + https://brew.sh
+
+#### GFORTRAN
+
+2. `brew install gfortran`
+
 #### How to install NetCDF libraries
 
 ##### Supported
 
 ###### MacOS and Linux
 
-1. install Homebrew and run the brew commands below in the terminal
-   + https://brew.sh
 2. `brew install netcdf`
 3. `brew install netcdf-fortran`
 4. `brew info gfortran`
