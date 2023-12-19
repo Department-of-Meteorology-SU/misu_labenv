@@ -2,19 +2,19 @@
 
 + Ezra Eisbrenner (December 2023)
 
-## Installation
+## Required other software
 
-### Python (conda/mamba)
+1. install Homebrew (https://brew.sh) and run the brew commands, given in the other sections, in your terminal
 
-#### MacOS and Linux
+## General Python Environment (conda/mamba)
 
-1. install Homebrew and run the brew commands below in the terminal
-   + `https://brew.sh`
-2. `brew install --cask mambaforge`
+### MacOS and Linux
+
+1. `brew install --cask mambaforge`
    * see `https://formulae.brew.sh/cask/mambaforge` for more information
-3. If in doubt, look for the `conda`/`mamba` executable with `brew info mambaforge`
+2. If in doubt, look for the `conda`/`mamba` executable with `brew info mambaforge`
 
-#### Create the MISU conda environment
+### Create the MISU conda environment
 
 ```
 mamba create -n misu_pyenv -c conda-forge \
@@ -28,34 +28,26 @@ activate the environment with
 
 `mamba activate misu_pyenv` or `conda activate misu_pyenv`
 
-### FORTRAN
+## FORTRAN
 
-1. install Homebrew and run the brew commands below in the terminal
-   + https://brew.sh
+### MacOS and Linux
 
-#### GFORTRAN
-
-2. `brew install gfortran`
-
-#### How to install NetCDF libraries
-
-##### Supported
-
-###### MacOS and Linux
-
+1. `brew install gfortran`
 2. `brew install netcdf`
 3. `brew install netcdf-fortran`
-4. `brew info gfortran`
-   + find the path to the library, for example `/home/linuxbrew/.linuxbrew/Cellar/gcc/13.2.0/bin`
-5. `brew info netcdf-fortran`
-   + find the path to the library, for example `/usr/local/Cellar/netcdf-fortran/4.6.1`
-6. in the `Makefile` update `GFORTRAN` and `NCDF_ROOT` with the path to `gfortran` and to `netcdf-fortran`
 
-###### Windows
+You can find the path to the executables with
+
+1. `brew info gfortran`
+   + find the path to the library, for example `/home/linuxbrew/.linuxbrew/Cellar/gcc/13.2.0/bin`
+1. `brew info netcdf-fortran`
+   + find the path to the library, for example `/usr/local/Cellar/netcdf-fortran/4.6.1`
+
+### Windows
 
 1. install a Linux in a virtual machine
 2. follow the instructions for Linux
 
-##### Unsupported
+### Unsupported
 
 Other ways are possible, on all systems, from Linux, to MacOS, to Windows. Including official Linux repositories which may hold `libnetcdff-dev` or using `WSL` on Windows. However, none of those are supported by the teaching assistant.
