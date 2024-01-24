@@ -17,11 +17,19 @@
 ### Create the MISU conda environment
 
 ```
-mamba create -n misu_pyenv -c conda-forge \
-      "python=3.10" \ # proplot does not support python > 3.10 as of December 2023
-      dynaconf jupyter \ # settings and tools
-      numpy scipy xarray pandas f90nml \
-      proplot matplotlib # plotting
+mamba create         \ # mamba us faster than conda
+      -n misu_pyenv  \ # name of new conda environment
+      -c conda-forge \ # channel from where to pull packages
+      "python=3.10"  \ # proplot does not support python > 3.10 as of December 2023
+      dynaconf       \ # advanced project settings
+      jupyter        \ # for notebooks and interactive vscode
+      numpy          \ # math
+      scipy          \ # math
+      xarray         \ # dimensional data
+      pandas         \ # tabular data
+      f90nml         \ # fortran namelist handling
+      proplot        \ # plotting with sensible defaults
+      matplotlib       # plotting
 ```
 
 activate the environment with
