@@ -29,7 +29,8 @@ mamba create         \ # mamba us faster than conda
       pandas         \ # tabular data
       f90nml         \ # fortran namelist handling
       proplot        \ # plotting with sensible defaults
-      matplotlib       # plotting
+      matplotlib     \ # plotting
+      black            # a formatter, non-negotiable
 ```
 
 activate the environment with
