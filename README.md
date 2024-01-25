@@ -13,13 +13,15 @@
 
 ## MacOS and Linux
 
+### Python Environment
+
+First,
+
 1. `brew install --cask mambaforge`
    * see `https://formulae.brew.sh/cask/mambaforge` for more information
 2. If in doubt, look for the `conda`/`mamba` executable with `brew info mambaforge`
 
-### Python Environment
-
-Create the MISU conda environment
+then create the MISU conda environment
 
 ```
 mamba create         \ # mamba is faster than conda
