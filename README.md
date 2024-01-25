@@ -17,7 +17,7 @@
 ### Create the MISU conda environment
 
 ```
-mamba create         \ # mamba us faster than conda
+mamba create         \ # mamba is faster than conda
       -n misu_pyenv  \ # name of new conda environment
       -c conda-forge \ # channel from where to pull packages
       "python=3.10"  \ # proplot does not support python > 3.10 as of December 2023
