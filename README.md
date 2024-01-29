@@ -37,6 +37,7 @@ mamba create         \ # mamba is faster than conda
       f90nml         \ # fortran namelist handling
       proplot        \ # plotting with sensible defaults
       matplotlib     \ # plotting
+      cartopy        \ # map projections
       black            # a formatter, non-negotiable
 ```
 
