@@ -24,21 +24,22 @@ First,
 then create the MISU conda environment
 
 ```
-mamba create         \ # mamba is faster than conda
-      -n misu_pyenv  \ # name of new conda environment
-      -c conda-forge \ # channel from where to pull packages
-      "python=3.10"  \ # proplot does not support python > 3.10 as of December 2023
-      dynaconf       \ # advanced project settings
-      jupyter        \ # for notebooks and interactive vscode
-      numpy          \ # math
-      scipy          \ # math
-      xarray         \ # dimensional data
-      pandas         \ # tabular data
-      f90nml         \ # fortran namelist handling
-      proplot        \ # plotting with sensible defaults
-      matplotlib     \ # plotting
-      cartopy        \ # map projections
-      black            # a formatter, non-negotiable
+mamba create         `# mamba is faster than conda` \
+      -n misu_pyenv  `# name of new conda environment` \
+      -c conda-forge `# channel from where to pull packages` \
+      "python<3.10"  `# proplot does not support python > 3.10 as of December 2023` \
+                     `# cartopy does not support python > 3.9 as of January 2024 with these dependencies` \
+      dynaconf       `# advanced project settings` \
+      jupyter        `# for notebooks and interactive vscode` \
+      numpy          `# math` \
+      scipy          `# math` \
+      xarray         `# dimensional data` \
+      pandas         `# tabular data` \
+      f90nml         `# fortran namelist handling` \
+      proplot        `# plotting with sensible defaults (restricts matplotlib<3.5 as of January 2024)` \
+      matplotlib     `# plotting` \
+      cartopy        `# map projections` \
+      black          `# a formatter, non-negotiable`
 ```
 
 activate the environment with
