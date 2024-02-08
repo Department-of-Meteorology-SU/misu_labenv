@@ -31,6 +31,7 @@ mamba create         `# mamba is faster than conda` \
                      `# cartopy does not support python > 3.9 as of January 2024 with these dependencies` \
       dynaconf       `# advanced project settings` \
       jupyter        `# for notebooks and interactive vscode` \
+      dask           `# for parallel workflows like xarray.open_mfdataset` \
       numpy          `# math` \
       scipy          `# math` \
       xarray         `# dimensional data` \
@@ -39,6 +40,7 @@ mamba create         `# mamba is faster than conda` \
       proplot        `# plotting with sensible defaults (restricts matplotlib<3.5 as of January 2024)` \
       matplotlib     `# plotting` \
       cartopy        `# map projections` \
+      colormaps      `# provides many colormaps` \
       black          `# a formatter, non-negotiable`
 ```
 
