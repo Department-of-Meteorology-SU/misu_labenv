@@ -32,6 +32,7 @@ mamba create         `# mamba is faster than conda` \
       dynaconf       `# advanced project settings` \
       jupyter        `# for notebooks and interactive vscode` \
       dask           `# for parallel workflows like xarray.open_mfdataset` \
+      h5netcdf       `# another backend for NetCDF` \
       numpy          `# math` \
       scipy          `# math` \
       xarray         `# dimensional data` \
