@@ -2,10 +2,6 @@
 
 + Ezra Eisbrenner (December 2023)
 
-## Required other software
-
-1. install Homebrew (https://brew.sh) and run the brew commands, given in the other sections, in your terminal
-
 ## Windows
 
 + for FORTRAN install a Linux in a virtual machine and follow the instructions for MacOS and Linux
@@ -14,6 +10,10 @@
    2. or work within the virtual maschine too, then follow the instructions for MacOS and Linux
 
 ## MacOS and Linux
+
+### Required other software
+
+1. install Homebrew (https://brew.sh) and run the brew commands, given in the other sections, in your terminal
 
 ### Python Environment
 
