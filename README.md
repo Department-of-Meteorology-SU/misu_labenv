@@ -8,8 +8,10 @@
 
 ## Windows
 
-1. install a Linux in a virtual machine
-2. follow the instructions for Linux
++ for FORTRAN install a Linux in a virtual machine and follow the instructions for MacOS and Linux
++ for Python you can
+   1. install the [Anaconda suite](https://docs.anaconda.com/free/anaconda/install/windows/), it is slow but works (you can find a list of recommended packages in the MacOS and Linux section below)
+   2. or work within the virtual maschine too, then follow the instructions for MacOS and Linux
 
 ## MacOS and Linux
 
