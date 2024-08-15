@@ -1,29 +1,38 @@
 # MISU Computer-Lab Environments
 
++ Ezra Eisbrenner (August 2024)
 + Ezra Eisbrenner (December 2023)
 
 ## Windows
 
-+ for FORTRAN install a Linux in a virtual machine and follow the instructions for MacOS and Linux
-+ for Python you can
-   1. install the [Anaconda suite](https://docs.anaconda.com/free/anaconda/install/windows/), it is slow but works (you can find a list of recommended packages in the MacOS and Linux section below)
-   2. or work within the virtual maschine too, then follow the instructions for MacOS and Linux
-
-## MacOS and Linux
-
-### Required other software
+1. for FORTRAN install a Linux in a virtual machine and follow the instructions for MacOS and Linux
+   + but, you are welcome to give feedback on the use of [WSL](https://learn.microsoft.com/en-us/windows/wsl/install) v2 (Windows Subsystem for Linux version 2). The steps for Linux below should work 1-to-1 on WSLv2. 
+2. for Python you can
+   + install the [Anaconda suite](https://docs.anaconda.com/free/anaconda/install/windows/), it is slow but works (you can find a list of recommended packages in the MacOS and Linux section below)
+   + or follow this [miniforge installation guide for Windows](https://github.com/conda-forge/miniforge?tab=readme-ov-file#windows)
+   + or work within the virtual maschine too, then follow the instructions for MacOS and Linux
+  
+## MacOS
 
 1. install Homebrew (https://brew.sh) and run the brew commands, given in the other sections, in your terminal
-
-### Python Environment
-
-First,
-
-1. `brew install --cask mambaforge`
+2. if you want python, then
+   * `brew install --cask mambaforge`
    * see `https://formulae.brew.sh/cask/mambaforge` for more information
-2. If in doubt, look for the `conda`/`mamba` executable with `brew info mambaforge`
+   * If in doubt, look for the `conda`/`mamba` executable with `brew info mambaforge`
+3. if you want FORTRAN, follow the FORTRAN instructions below.
 
-then create the MISU conda environment
+## Linux
+
+1. if you want python, then
+   * unfortunately, `--cask` is not supported on Linux, thus Mamba has to be installed the conventional ways
+   * see here https://mamba.readthedocs.io/en/latest/installation/mamba-installation.html
+   * they send you here https://github.com/conda-forge/miniforge
+   * which will tell you to do `curl -L -O "https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-$(uname)-$(uname -m).sh"` then `bash Miniforge3-$(uname)-$(uname -m).sh`
+* if you want FORTRAN, install Homebrew (https://brew.sh) and follow the FORTRAN instructions below.
+
+## Python Environment
+
+Create the MISU conda environment with the shell (bash) command below
 
 ```
 mamba create         `# mamba is faster than conda` \
@@ -51,7 +60,7 @@ activate the environment with
 
 `mamba activate misu_pyenv` or `conda activate misu_pyenv`
 
-### FORTRAN dependencies
+## FORTRAN dependencies
 
 1. `brew install gfortran`
 2. `brew install netcdf`
