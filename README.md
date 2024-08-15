@@ -14,7 +14,7 @@
   
 ## MacOS
 
-1. install Homebrew (https://brew.sh) and run the brew commands, given in the other sections, in your terminal
+1. install Homebrew (https://brew.sh) and run the brew commands, given here and in the other sections, in your terminal
 2. if you want python, then
    * `brew install --cask mambaforge`
    * see `https://formulae.brew.sh/cask/mambaforge` for more information
