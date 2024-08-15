@@ -10,7 +10,7 @@
 2. for Python you can
    + install the [Anaconda suite](https://docs.anaconda.com/free/anaconda/install/windows/), it is slow but works (you can find a list of recommended packages in the MacOS and Linux section below)
    + or follow this [miniforge installation guide for Windows](https://github.com/conda-forge/miniforge?tab=readme-ov-file#windows)
-   + or work within the virtual maschine too, then follow the instructions for MacOS and Linux
+   + or work within the virtual maschine too, then follow the instructions for Linux
   
 ## MacOS
 
