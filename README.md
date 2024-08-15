@@ -8,7 +8,7 @@
 1. for FORTRAN install a Linux in a virtual machine and follow the instructions for Linux
    + but, you are welcome to give feedback on the use of [WSL](https://learn.microsoft.com/en-us/windows/wsl/install) v2 (Windows Subsystem for Linux version 2). The steps for Linux below should work 1-to-1 on WSLv2. 
 2. for Python you can
-   + install the [Anaconda suite](https://docs.anaconda.com/free/anaconda/install/windows/), it is slow but works (you can find a list of recommended packages in the MacOS and Linux section below)
+   + install the [Anaconda suite](https://docs.anaconda.com/free/anaconda/install/windows/), it is slow but works (you can find a list of recommended packages in the Python environment section below)
    + or follow this [miniforge installation guide for Windows](https://github.com/conda-forge/miniforge?tab=readme-ov-file#windows)
    + or work within the virtual maschine too, then follow the instructions for Linux
   
